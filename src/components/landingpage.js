@@ -39,18 +39,18 @@ class Landing extends Component {
                   <i className="fa fa-github-square" aria-hidden="true" />
                 </a>
 
-                {/* Instagram */}
+                {/* Twitter */}
                 <a
-                  href="http://google.com"
+                  href="https://twitter.com/Xillioneur?lang=en"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fa fa-free-code-camp" aria-hidden="true" />
+                  <i className="fa fa-twitter-square" aria-hidden="true" />
                 </a>
 
                 {/* Youtube */}
                 <a
-                  href="http://google.com"
+                  href="https://www.youtube.com/user/MrWizzy606/featured?view_as=public"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
