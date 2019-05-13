@@ -8,18 +8,14 @@ class Landing extends Component {
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
-              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+              src="wjdev.png" // https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png
               alt="avatar"
               className="avatar-img"
             />
 
             <div className="banner-text">
-              <h1>Willie Liwa Johnson</h1>
-
-              <hr />
-
               <p>IOS APPS | UNITY GAMES | REACT APPS | MONGODB DATABASES</p>
-
+              <hr/>
               <div className="social-links">
                 {/* LinkedIn */}
                 <a
