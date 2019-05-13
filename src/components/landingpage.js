@@ -14,8 +14,8 @@ class Landing extends Component {
             />
 
             <div className="banner-text">
-              <p>IOS APPS | UNITY GAMES | REACT APPS | MONGODB DATABASES</p>
-              <hr/>
+              <p>IOS APPS | UNITY GAMES | REACT WEBSITES | MONGO DATABASES</p>
+              <hr />
               <div className="social-links">
                 {/* LinkedIn */}
                 <a
