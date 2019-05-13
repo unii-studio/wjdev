@@ -41,6 +41,7 @@
   background: #27221f;
   color: white;
   padding: 2em;
+  border-radius: 10px;
 }
 
 /* contact page css */
@@ -74,7 +75,7 @@
 }
 
 .contact-grid hr {
-  border: 5px dotted black;
+  border: 2px double black;
   width: 50%;
   margin: auto;
 }

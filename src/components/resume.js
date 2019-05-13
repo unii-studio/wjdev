@@ -18,7 +18,7 @@ class Resume extends Component {
               />
             </div>
             <div style={{ textAlign: 'center' }}>
-              <h2 style={{ paddingTop: '0.5em' }}>Willie Liwa Johnson</h2>
+              <h2 style={{ paddingTop: '0.6em' }}>Willie Liwa Johnson</h2>
               <h4 style={{ color: 'grey' }}>Software Developer</h4>
               <hr
                 style={{

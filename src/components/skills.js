@@ -7,7 +7,7 @@ class Skills extends Component {
       <Grid>
         <Cell col={12}>
           <div style={{ display: 'flex' }}>
-            <p>{this.props.skill}</p>{' '}
+            {this.props.skill}{' '}
             <ProgressBar
               style={{
                 margin: 'auto',
