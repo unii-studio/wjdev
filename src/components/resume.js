@@ -81,46 +81,36 @@ class Resume extends Component {
             </div>
           </Cell>
           <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>
-
-            <Education
-              startYear={2002}
-              endYear={2006}
-              schoolName="My University"
-              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            />
-
-            <Education
-              startYear={2007}
-              endYear={2009}
-              schoolName="My 2nd University"
-              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            />
-            <hr style={{ borderTop: '3px solid #780206' }} />
-
-            <h2>Experience</h2>
-
-            <Experience
-              startYear={2009}
-              endYear={2012}
-              jobName="First Job"
-              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            />
-
-            <Experience
-              startYear={2012}
-              endYear={2016}
-              jobName="Second Job"
-              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            />
-            <hr style={{ borderTop: '3px solid #780206' }} />
+            {/* Skills */}
             <h2>Skills</h2>
             <Skills skill="iOS/Swift" progress={100} />
             <Skills skill="Unity" progress={85} />
             <Skills skill="HTML/CSS" progress={70} />
-            <Skills skill="javascript" progress={50} />
+            <Skills skill="JavaScript" progress={50} />
             <Skills skill="NodeJS" progress={40} />
             <Skills skill="React" progress={25} />
+            <hr style={{ borderTop: '3px solid #780206' }} />
+
+            {/* Education */}
+            <h2>Education</h2>
+            <Education
+              startYear={2017}
+              endYear={2019}
+              schoolName="Make School Product College"
+              schoolDescription="Developed numerous iOS apps working with Swift, Python & Flask and Ruby & Rails to acquire knowledge of Full Stack iOS development and touching on multithreading and advanced UIKit.
+Implemented CS Data Structures using Python and analyzed their Big-O complexity. 
+Collaborated with many developers on projects with teams of 4+ members and in the community."
+            />
+            <hr style={{ borderTop: '3px solid #780206' }} />
+
+            {/* Experience */}
+            <h2>Experience</h2>
+            <Experience
+              startYear={2018}
+              endYear={2018}
+              jobName="Make School Summer Academy Curriculum Assistant"
+              jobDescription="Wrote iOS tutorials for Make School using markdown. Created a tutorial to help explain the process of networking and decoding JSON in swift 4."
+            />
           </Cell>
         </Grid>
       </div>
