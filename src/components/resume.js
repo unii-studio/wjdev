@@ -27,12 +27,10 @@ class Resume extends Component {
                 }}
               />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
+                I'm a software engineer who specializes in iOS Development. With
+                a variety of projects under my belt I have experience using many
+                different technologies. I love to develop video games,
+                productivity apps, augmented reality apps, and dev tools.
               </p>
               <hr style={{ borderTop: '3px solid #061161', width: '100%' }} />
               <h5>Address</h5>
