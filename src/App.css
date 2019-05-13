@@ -86,10 +86,18 @@
 
 /* contact page css */
 
-.avatar-img {
+.logo-img {
   height: 250px;
   padding-top: 5em;
   padding-bottom: 4em;
+  /* filter: invert(100%); */
+}
+
+.portrait-img {
+  height: 400px;
+  border-radius: 50%;
+  /* padding-top: 5em;
+  padding-bottom: 4em; */
   /* filter: invert(100%); */
 }
 

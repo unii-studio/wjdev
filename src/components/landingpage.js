@@ -10,7 +10,7 @@ class Landing extends Component {
             <img
               src="wjdev.png" // https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png
               alt="avatar"
-              className="avatar-img"
+              className="logo-img"
             />
 
             <div className="banner-text">
