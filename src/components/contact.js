@@ -205,10 +205,7 @@ export default class Contact extends React.Component {
                 }}
               />
               <p className="form-error">{this.state.messageError}</p>
-              <button
-                className="btn btn--black"
-                onClick={e => this.onSubmit(e)}
-              >
+              <button className="btn-primary" onClick={e => this.onSubmit(e)}>
                 Send
               </button>
             </form>
