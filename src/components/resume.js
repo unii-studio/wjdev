@@ -30,7 +30,8 @@ class Resume extends Component {
                 I'm a software engineer who specializes in iOS Development. With
                 a variety of projects under my belt I have experience using many
                 different technologies. I love to develop video games,
-                productivity apps, augmented reality apps, and dev tools.
+                productivity apps, augmented reality apps, and content driven
+                websites.
               </p>
               <hr style={{ borderTop: '3px solid #061161', width: '100%' }} />
               <h5>Address</h5>

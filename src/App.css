@@ -52,15 +52,14 @@
   width: 100%;
   height: 100%;
   justify-content: center;
-  padding-top: 2em;
+  padding-top: 4em;
 }
 
 .contact-grid {
   text-align: center;
   justify-content: center;
-  width: 80%;
+  width: 60%;
   height: 550px;
-  background: white;
   color: black;
   margin-bottom: 20px;
 }
@@ -75,14 +74,80 @@
 }
 
 .contact-grid hr {
-  border: 2px double black;
-  width: 50%;
+  border: 2px double #061161;
+  width: 100%;
   margin: auto;
+  margin-bottom: 40px;
 }
 
-.contact-list i {
-  font-size: 66px;
-  padding-right: 5rem;
+.contact-form {
+  display: grid;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 400px;
+  display: block;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: 'proxima nova';
+  letter-spacing: 0.25px;
+  font-size: 1em;
+  justify-self: center;
+}
+
+.contact-form input {
+  margin-bottom: 31px;
+  height: 25px;
+  font-weight: bold;
+}
+.contact-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px black inset;
+}
+
+.contact-form textarea {
+  height: 125px;
+  margin-bottom: 30px;
+}
+
+.contact-form label {
+  color: black;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  margin-bottom: 7.5px;
+  display: inline-block;
+}
+
+.contact-form button {
+  width: 60%;
+  height: 40px;
+  justify-self: center;
+}
+
+@media only screen and (max-width: 475px) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+  }
+}
+
+.modal-body {
+  display: block;
+  height: 75px;
+  position: relative;
+  text-align: center;
+  border: none;
+}
+.modal-body__text {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.1em;
+  margin-top: 60px;
+  padding: 0 10px;
 }
 
 /* contact page css */
@@ -140,4 +205,13 @@
   color: white;
   font-size: 5em;
   padding: 8px;
+}
+
+.form-error {
+  color: #ff735b;
+  margin: 5px 0 10px;
+}
+
+.form-error:last-of-type {
+  margin-bottom: 15px;
 }
