@@ -60,12 +60,6 @@ class Projects extends Component {
       );
     } else if (this.state.activeTab === 1) {
       return (
-        <div>
-          <h1>This is React</h1>
-        </div>
-      );
-    } else if (this.state.activeTab === 2) {
-      return (
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
@@ -117,6 +111,13 @@ class Projects extends Component {
           </Card>
         </div>
       );
+    } else if (this.state.activeTab === 2) {
+      return (
+        <div className="projects-grid">
+          {/* Project 1 */}
+          <h1> This is react</h1>
+        </div>
+      );
     } else if (this.state.activeTab === 3) {
       return (
         <div>
@@ -135,8 +136,8 @@ class Projects extends Component {
           ripple
         >
           <Tab>iOS</Tab>
-          <Tab>React</Tab>
           <Tab>Unity</Tab>
+          <Tab>React</Tab>
           <Tab>MongoDB</Tab>
         </Tabs>
 
