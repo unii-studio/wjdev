@@ -1,13 +1,14 @@
-<a href="https://me.unii.design" target="_blank"><img src="https://github.com/unii-studio/unii.design/blob/master/public/wjdev.png" height="200" alt="logo"></a>
+<a href="https://unii.design" target="_blank"><img src="https://i.imgur.com/pbsQu35.png" height="200" alt="logo"></a>
 
-# UNii
+# UNii – Portfolio & Blog
 
 > Design, Games, Applications
 
 TODO: Badges
 
-[![UNii](https://github.com/unii-studio/unii.design/blob/master/public/wjdev.png)]()
-
+<p align="center">
+  <a href="https://me.unii.design" target="_blank"><img src="https://i.imgur.com/TvmZHF8.png" height="500" alt="logo"></a>
+</p>
 ## Features
 
 ---
