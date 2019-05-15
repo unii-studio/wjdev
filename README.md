@@ -1,4 +1,4 @@
-<a href="https://unii.design" target="_blank"><img src="https://i.imgur.com/pbsQu35.png" height="200" alt="logo"></a>
+<a href="https://unii.design" target="_blank"><img src="https://i.imgur.com/pbsQu35.png" height="100" alt="logo"></a>
 
 # UNii – Portfolio & Blog
 
