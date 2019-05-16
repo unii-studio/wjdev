@@ -19,7 +19,7 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     padding: '0',
     borderRadius: '3px',
-    border: 'none',
+    border: 'solid',
   },
 };
 
@@ -36,7 +36,7 @@ export default class Contact extends React.Component {
 
     resData: '',
 
-    modalIsOpen: false,
+    modalIsOpen: true,
   };
 
   change = e => {
@@ -155,9 +155,10 @@ export default class Contact extends React.Component {
       <div className="contact-body">
         <Grid className="contact-grid">
           <Cell col={6}>
-            <h2>Let's get in contact</h2>
-            <hr />
+ 
             <form className="contact-form">
+              <h2>Let's get in contact</h2>
+              <hr />
               <label htmlFor="name">Name</label>
               <input
                 name="name"
@@ -216,7 +217,7 @@ export default class Contact extends React.Component {
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
-          contentLabel="Example Modal"
+          contentLabel="Email sent"
           style={customStyles}
           closeTimeoutMS={150}
           overlayClassName="formOverlay"
@@ -236,18 +237,6 @@ export default class Contact extends React.Component {
             <p className="modal-body__text">{this.state.resData}</p>
             <p>I'll be in touch with you soon.</p>
           </div>
-
-          <button
-            className="btn"
-            style={{
-              textAlign: 'center',
-              margin: '10px auto',
-              display: 'block',
-            }}
-            onClick={this.closeModal}
-          >
-            Close
-          </button>
         </Modal>
       </div>
     );

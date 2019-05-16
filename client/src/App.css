@@ -46,13 +46,56 @@
 
 /* contact page css */
 
+.formOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.modalHeader-container {
+  color: #fff;
+  font-weight: bold;
+  background-color: #061161;
+  text-align: center;
+  height: 40px;
+}
+.modalHeader-container__text {
+  position: relative;
+  top: 13px;
+  left: 20px;
+}
+.modalHeader-container__close-icon {
+  background-color: #081472;
+  float: right;
+  cursor: pointer;
+  padding: 12.3px;
+}
+.modal-body {
+  display: block;
+  height: 25px;
+  position: relative;
+  text-align: center;
+  border: none;
+}
+
+.modal-body__text {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.1em;
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
 .contact-body {
   margin: auto;
   position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
-  padding-top: 4em;
 }
 
 .contact-grid {
@@ -61,7 +104,7 @@
   width: 60%;
   height: 550px;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .contact-grid h2 {
@@ -82,26 +125,29 @@
 
 .contact-form {
   display: grid;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
+  /* border: black 2px solid; */
   border-radius: 10px;
-  padding: 2em;
+  margin-top: 15%;
+  padding: 1em;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 400px;
   display: block;
-  border: 2px solid #061161;
+  border: none;
   border-radius: 5px;
   padding: 5px 10px;
   font-family: 'proxima nova';
   letter-spacing: 0.25px;
   font-size: 1em;
   justify-self: center;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .contact-form input {
-  margin-bottom: 31px;
+  margin-bottom: 15px;
   height: 25px;
   font-weight: bold;
 }
@@ -144,21 +190,6 @@
   .contact-form textarea {
     width: 90%;
   }
-}
-
-.modal-body {
-  display: block;
-  height: 75px;
-  position: relative;
-  text-align: center;
-  border: none;
-}
-.modal-body__text {
-  text-align: center;
-  vertical-align: middle;
-  line-height: 1.1em;
-  margin-top: 60px;
-  padding: 0 10px;
 }
 
 /* contact page css */

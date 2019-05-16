@@ -7,11 +7,7 @@ class Landing extends Component {
       <div style={{ width: '100%', margin: 'auto' }}>
         <Grid className="landing-grid">
           <Cell col={12}>
-            <img
-              src="wjdev.png" // https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png
-              alt="avatar"
-              className="logo-img"
-            />
+            <img src="wjdev.png" alt="avatar" className="logo-img" />
 
             <div className="banner-text">
               <p>IOS APPS | UNITY GAMES | REACT WEBSITES | MONGO DATABASES</p>
