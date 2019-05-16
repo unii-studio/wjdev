@@ -3,7 +3,6 @@ const { check, validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 const { mongoURI, sendgridKey, emailAddress } = require('../config/config');
 
-console.log(mongoURI);
 mongoose.connect(mongoURI);
 require('../models/email');
 const Email = mongoose.model('emails');
