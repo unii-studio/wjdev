@@ -1,4 +1,4 @@
-const { port } = require('../config/config');
+const { envPort } = require('./config/config');
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -20,6 +20,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-const port = port || 5000;
+const port = envPort || 5000;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
