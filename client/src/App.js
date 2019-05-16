@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import { Layout, Header, Navigation, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 
@@ -13,26 +13,27 @@ class App extends Component {
             className="header-color"
             title={
               <div>
-                <Link style={{ textDecoration: 'blue', color: 'white' }} to="/">
-                  W.J DEV
+                <Link
+                  style={{
+                    textDecoration: 'blue',
+                    color: 'white',
+                    fontFamily: 'Raleway',
+                  }}
+                  to="/"
+                >
+                  WJ DEV
                 </Link>
               </div>
             }
             scroll
           >
             <Navigation>
-              <Link className="one" to="/aboutme">
+              {/* <Link className="one" to="/aboutme">
                 ABOUT
-              </Link>
-              <Link className="two" to="/contact">
-                CONTACT
-              </Link>
-              <Link className="three" to="/projects">
-                PROJECTS
-              </Link>
-              <Link className="four" to="/resume">
-                RESUME
-              </Link>
+              </Link> */}
+              <Link to="/projects">PROJECTS</Link>
+              <Link to="/resume">RESUME</Link>
+              <Link to="/contact">CONTACT</Link>
             </Navigation>
           </Header>
 

@@ -17,16 +17,25 @@ class Resume extends Component {
                 alt="Portrait of Willie Liwa Johnson"
               />
             </div>
-            <div style={{ textAlign: 'center' }}>
-              <h2 style={{ paddingTop: '0.6em' }}>Willie Liwa Johnson</h2>
-              <h4 style={{ color: 'grey' }}>Software Developer</h4>
+            <div style={{ textAlign: 'center', fontFamily: 'Open Sans' }}>
+              <h2
+                style={{
+                  paddingTop: '0.6em',
+                  fontFamily: 'Raleway',
+                }}
+              >
+                Willie Liwa Johnson
+              </h2>
+              <h4 style={{ color: 'grey', fontFamily: 'Open Sans' }}>
+                Software Developer
+              </h4>
               <hr
                 style={{
                   borderTop: '3px solid #061161',
                   width: '100%',
                 }}
               />
-              <p>
+              <p style={{ fontFamily: 'Open Sans' }}>
                 I'm a software engineer who specializes in iOS Development. With
                 a variety of projects under my belt I have experience using many
                 different technologies. I love to develop video games,
@@ -34,7 +43,7 @@ class Resume extends Component {
                 websites.
               </p>
               <hr style={{ borderTop: '3px solid #061161', width: '100%' }} />
-              <h5>Address</h5>
+              <h5 style={{ fontFamily: 'Open Sans' }}>Address</h5>
               <p>
                 <a
                   href="https://www.google.com/maps/place/MONTGOMRY+VLG,+MD+20879/@39.1708499,-77.1858614,14.74z/data=!4m5!3m4!1s0x89b62b579a467b6d:0xe2ea76d8df38b7a8!8m2!3d39.1733025!4d-77.1772737"
@@ -44,8 +53,8 @@ class Resume extends Component {
                   Gaithersburg, MD 20879
                 </a>
               </p>
-              <h5>Phone</h5>
-              <p>
+              <h5 style={{ fontFamily: 'Open Sans' }}>Phone</h5>
+              <p style={{ fontFamily: 'Open Sans' }}>
                 <a
                   href="tel:240-550-5589"
                   rel="noopener noreferrer"
@@ -54,8 +63,8 @@ class Resume extends Component {
                   (240) 550-5589
                 </a>
               </p>
-              <h5>Email</h5>
-              <p>
+              <h5 style={{ fontFamily: 'Open Sans' }}>Email</h5>
+              <p style={{ fontFamily: 'Open Sans' }}>
                 <a
                   href={
                     "mailto:liwa.johnson@gmail.com?subject=Let's get in touch"
@@ -66,7 +75,7 @@ class Resume extends Component {
                   liwa.johnson@gmail.com
                 </a>
               </p>
-              <h5>Web</h5>
+              <h5 style={{ fontFamily: 'Open Sans' }}>Web</h5>
               <p>
                 <a
                   href="http://unii.design"
@@ -81,7 +90,7 @@ class Resume extends Component {
           </Cell>
           <Cell className="resume-right-col" col={8}>
             {/* Skills */}
-            <h2>Skills</h2>
+            <h2 style={{ fontFamily: 'Raleway' }}>Skills</h2>
             <Skills skill="iOS/Swift" progress={100} />
             <Skills skill="Unity" progress={85} />
             <Skills skill="HTML/CSS" progress={70} />
@@ -91,7 +100,7 @@ class Resume extends Component {
             <hr style={{ borderTop: '3px solid #780206' }} />
 
             {/* Education */}
-            <h2>Education</h2>
+            <h2 style={{ fontFamily: 'Raleway' }}>Education</h2>
             <Education
               startYear={2017}
               endYear={2019}
@@ -103,7 +112,7 @@ Collaborated with many developers on projects with teams of 4+ members and in th
             <hr style={{ borderTop: '3px solid #780206' }} />
 
             {/* Experience */}
-            <h2>Experience</h2>
+            <h2 style={{ fontFamily: 'Raleway' }}>Experience</h2>
             <Experience
               startYear={2018}
               endYear={2018}

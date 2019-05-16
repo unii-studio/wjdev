@@ -36,7 +36,7 @@ export default class Contact extends React.Component {
 
     resData: '',
 
-    modalIsOpen: true,
+    modalIsOpen: false,
   };
 
   change = e => {
@@ -155,7 +155,6 @@ export default class Contact extends React.Component {
       <div className="contact-body">
         <Grid className="contact-grid">
           <Cell col={6}>
- 
             <form className="contact-form">
               <h2>Let's get in contact</h2>
               <hr />
