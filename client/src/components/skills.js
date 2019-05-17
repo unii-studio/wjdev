@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Cell, ProgressBar } from 'react-mdl';
 import { number, string } from 'prop-types';
 
-const Skills = {skill, progress} => (
+const Skills = ({ skill, progress }) => (
   <Grid>
     <Cell col={6}>{skill}</Cell>
     <Cell col={6}>

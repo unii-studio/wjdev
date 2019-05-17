@@ -1,43 +1,41 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Layout, Header, Navigation, Content } from 'react-mdl';
-import Main from './components/main';
 import { Link } from 'react-router-dom';
+import './App.css';
+import Main from './components/main';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="demo-big-content">
-        <Layout>
-          <Header
-            className="header-color"
-            title={
-              <div>
-                <Link
-                  style={{
-                    textDecoration: 'blue',
-                    color: 'white',
-                    fontFamily: 'Raleway',
-                  }}
-                  to="/"
-                >
-                  WJ DEV
-                </Link>
-              </div>
-            }
-            scroll
-          >
-            <Navigation>
-              {/* <Link className="one" to="/aboutme">
+const App = () => (
+  <div className="demo-big-content">
+    <Layout>
+      <Header
+        className="header-color"
+        title={
+          <div>
+            <Link
+              style={{
+                textDecoration: 'blue',
+                color: 'white',
+                fontFamily: 'Raleway',
+              }}
+              to="/"
+            >
+              WJ DEV
+            </Link>
+          </div>
+        }
+        scroll
+      >
+        <Navigation>
+          {/* <Link className="one" to="/aboutme">
                 ABOUT
               </Link> */}
-              <Link to="/projects">PROJECTS</Link>
-              <Link to="/resume">RESUME</Link>
-              <Link to="/contact">CONTACT</Link>
-            </Navigation>
-          </Header>
+          <Link to="/projects">PROJECTS</Link>
+          <Link to="/resume">RESUME</Link>
+          <Link to="/contact">CONTACT</Link>
+        </Navigation>
+      </Header>
 
-          {/* <Drawer
+      {/* <Drawer
             title={
               <Link style={{ textDecoration: 'none', color: 'black' }} to="/">
                 W.J DEV
@@ -51,14 +49,12 @@ class App extends Component {
               <Link to="/resume">Resume</Link>
             </Navigation>
           </Drawer> */}
-          <Content>
-            <div className="page-content" />
-            <Main />
-          </Content>
-        </Layout>
-      </div>
-    );
-  }
-}
+      <Content>
+        <div className="page-content" />
+        <Main />
+      </Content>
+    </Layout>
+  </div>
+);
 
 export default App;

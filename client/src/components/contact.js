@@ -5,7 +5,7 @@ import { Grid, Cell } from 'react-mdl';
 
 Modal.setAppElement('div');
 
-const customStyles = {
+const modalStyles = {
   content: {
     top: 'calc(50% + 27.5px)',
     left: '50%',
@@ -53,8 +53,9 @@ export default class Contact extends React.Component {
 
   onSubmit = e => {
     e.preventDefault();
+    const { name, email, subject, message } = this.state;
 
-    if (this.state.name === '') {
+    if (name === '') {
       this.setState({
         nameError: 'Please provide your name',
       });
@@ -64,14 +65,11 @@ export default class Contact extends React.Component {
       });
     }
 
-    if (this.state.email === '') {
+    if (email === '') {
       this.setState({
         emailError: 'Please provide an email address',
       });
-    } else if (
-      this.state.email === /^((?!@).)*$/ ||
-      this.state.email.indexOf('.') === -1
-    ) {
+    } else if (email === /^((?!@).)*$/ || email.indexOf('.') === -1) {
       this.setState({
         emailError: 'Please provide a valid email address',
       });
@@ -81,7 +79,7 @@ export default class Contact extends React.Component {
       });
     }
 
-    if (this.state.subject === '') {
+    if (subject === '') {
       this.setState({
         subjectError: 'Please provide a subject message',
       });
@@ -91,7 +89,7 @@ export default class Contact extends React.Component {
       });
     }
 
-    if (this.state.message === '') {
+    if (message === '') {
       this.setState({
         messageError: 'Please leave a message',
       });
@@ -102,20 +100,22 @@ export default class Contact extends React.Component {
     }
 
     setTimeout(() => {
+      const { nameError, emailError, subjectError, messageError } = this.state;
+
       if (
-        this.state.nameError === '' &&
-        this.state.emailError === '' &&
-        this.state.subjectError === '' &&
-        this.state.messageError === ''
+        nameError === '' &&
+        emailError === '' &&
+        subjectError === '' &&
+        messageError === ''
       ) {
         axios
           .post(
             '/send-email',
             {
-              name: this.state.name,
-              email: this.state.email,
-              subject: this.state.subject,
-              message: this.state.message,
+              name,
+              email,
+              subject,
+              message,
             },
             {
               headers: {
@@ -151,6 +151,10 @@ export default class Contact extends React.Component {
   };
 
   render() {
+    const { name, email, subject, message } = this.state;
+    const { nameError, emailError, subjectError, messageError } = this.state;
+    const { modalIsOpen, resData } = this.state;
+
     return (
       <div className="contact-body">
         <Grid className="contact-grid">
@@ -161,51 +165,55 @@ export default class Contact extends React.Component {
               <label htmlFor="name">Name</label>
               <input
                 name="name"
-                value={this.state.name}
+                value={name}
                 onChange={e => this.change(e)}
                 type="text"
                 id="name"
                 style={{
-                  margin: `${this.state.nameError.length > 0 ? '0' : ''}`,
+                  margin: `${nameError.length > 0 ? '0' : ''}`,
                 }}
               />
-              <p className="form-error">{this.state.nameError}</p>
+              <p className="form-error">{nameError}</p>
               <label htmlFor="email">Email</label>
               <input
                 name="email"
-                value={this.state.email}
+                value={email}
                 onChange={e => this.change(e)}
                 type="text"
                 id="email"
                 style={{
-                  margin: `${this.state.emailError.length > 0 ? '0' : ''}`,
+                  margin: `${emailError.length > 0 ? '0' : ''}`,
                 }}
               />
-              <p className="form-error">{this.state.emailError}</p>
+              <p className="form-error">{emailError}</p>
               <label htmlFor="subject">Subject</label>
               <input
                 name="subject"
-                value={this.state.subject}
+                value={subject}
                 onChange={e => this.change(e)}
                 type="text"
                 id="subject"
                 style={{
-                  margin: `${this.state.subjectError.length > 0 ? '0' : ''}`,
+                  margin: `${subjectError.length > 0 ? '0' : ''}`,
                 }}
               />
-              <p className="form-error">{this.state.subjectError}</p>
+              <p className="form-error">{subjectError}</p>
               <label htmlFor="message">Message</label>
               <textarea
                 name="message"
                 onChange={e => this.change(e)}
-                value={this.state.message}
+                value={message}
                 id="message"
                 style={{
-                  margin: `${this.state.messageError.length > 0 ? '0' : ''}`,
+                  margin: `${messageError.length > 0 ? '0' : ''}`,
                 }}
               />
-              <p className="form-error">{this.state.messageError}</p>
-              <button className="btn-primary" onClick={e => this.onSubmit(e)}>
+              <p className="form-error">{messageError}</p>
+              <button
+                className="btn-primary"
+                type="submit"
+                onClick={e => this.onSubmit(e)}
+              >
                 Send
               </button>
             </form>
@@ -213,11 +221,11 @@ export default class Contact extends React.Component {
         </Grid>
 
         <Modal
-          isOpen={this.state.modalIsOpen}
+          isOpen={modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           contentLabel="Email sent"
-          style={customStyles}
+          style={modalStyles}
           closeTimeoutMS={150}
           overlayClassName="formOverlay"
         >
@@ -233,7 +241,7 @@ export default class Contact extends React.Component {
           </div>
 
           <div className="modal-body">
-            <p className="modal-body__text">{this.state.resData}</p>
+            <p className="modal-body__text">{resData}</p>
             <p>I'll be in touch with you soon.</p>
           </div>
         </Modal>
