@@ -19,8 +19,11 @@ class Projects extends Component {
     this.state = { activeTab: 0 };
   }
 
-  toggleCategories() {
-    if (this.state.activeTab === 0) {
+  toggleCategories = () => {
+    const { activeTab } = this.state;
+
+    /* iOS */
+    if (activeTab === 0) {
       return (
         <div className="projects-grid">
           <p>Dev account currently expeired so appstore links don't work :(</p>
@@ -59,7 +62,9 @@ class Projects extends Component {
         </div>
       );
     }
-    if (this.state.activeTab === 1) {
+
+    /* Unity */
+    if (activeTab === 1) {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
@@ -83,7 +88,6 @@ class Projects extends Component {
               <Button
                 colored
                 href="https://github.com/willieLjohnson/Surge"
-                colored
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -113,7 +117,9 @@ class Projects extends Component {
         </div>
       );
     }
-    if (this.state.activeTab === 2) {
+
+    /* React */
+    if (activeTab === 2) {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
@@ -121,20 +127,29 @@ class Projects extends Component {
         </div>
       );
     }
-    if (this.state.activeTab === 3) {
+
+    /* MongoDB */
+    if (activeTab === 3) {
       return (
         <div>
           <h1>This is MongoDB</h1>
         </div>
       );
     }
-  }
+
+    return (
+      <div>
+        <h1>404! How'd you get all the way here!?</h1>
+      </div>
+    );
+  };
 
   render() {
+    const { activeTab } = this.state;
     return (
       <div>
         <Tabs
-          activeTab={this.state.activeTab}
+          activeTab={activeTab}
           onChange={tabId => this.setState({ activeTab: tabId })}
           ripple
         >
