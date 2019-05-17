@@ -13,7 +13,7 @@ class Education extends Component {
           <p>{this.props.schoolDescription}</p>
         </Cell>
       </Grid>
-    )
+    );
   }
 }
 
