@@ -160,7 +160,7 @@ export default class Contact extends React.Component {
         <Grid className="contact-grid">
           <Cell col={6}>
             <form className="contact-form">
-              <h2>Let's get in contact</h2>
+              <h2>Let&apos;s get in contact</h2>
               <hr />
               <label htmlFor="name">Name</label>
               <input
@@ -242,7 +242,7 @@ export default class Contact extends React.Component {
 
           <div className="modal-body">
             <p className="modal-body__text">{resData}</p>
-            <p>I'll be in touch with you soon.</p>
+            <p>I&apos;ll be in touch with you soon.</p>
           </div>
         </Modal>
       </div>
