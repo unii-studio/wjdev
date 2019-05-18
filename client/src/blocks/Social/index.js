@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import Link from './Link';
-import Icon from './Link';
+import Icon from './Icon';
 
 const Social = styled.div`
   display: flex;
@@ -10,6 +10,7 @@ const Social = styled.div`
   margin: auto;
 `;
 
+Social.Link = Link;
 Social.Icon = Icon;
 
 export default Social;
