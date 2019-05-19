@@ -13,7 +13,7 @@ const App = () => (
           <div>
             <Link // TODO: Replace with styled component. Currently not possible due to react-mdl css.
               style={{
-                textDecoration: 'blue',
+                textDecoration: 'none',
                 color: 'white',
                 fontFamily: 'Raleway',
               }}
