@@ -1,13 +1,15 @@
 import React from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Cell } from 'react-mdl';
+import Intro from '../blocks/Intro';
 import Banner from '../blocks/Banner';
 import Social from '../blocks/Social';
+import Logo from '../elements/Logo';
 
 const Landing = () => (
-  <div style={{ width: '100%', margin: 'auto' }}>
-    <Grid className="landing-grid">
+  <Intro>
+    <Intro.LandGrid>
       <Cell col={12}>
-        <img src="wjdev.png" alt="avatar" className="logo-img" />
+        <Logo />
 
         <Banner>
           <Banner.Text>
@@ -62,8 +64,8 @@ const Landing = () => (
           </Social>
         </Banner>
       </Cell>
-    </Grid>
-  </div>
+    </Intro.LandGrid>
+  </Intro>
 );
 
 export default Landing;
