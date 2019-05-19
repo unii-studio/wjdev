@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 require('./routes/email')(app);
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.ENV === 'production') {
   //Express will serve up production assets
   app.use(express.static('client/build'));
 
