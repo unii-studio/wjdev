@@ -77,7 +77,7 @@ const Resume = () => (
       <History.Split />
 
       {/* Education */}
-      <h2 style={{ fontFamily: 'Raleway' }}>Education</h2>
+      <H2>Education</H2>
       <Education
         startYear={2017}
         endYear={2019}
