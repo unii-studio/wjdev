@@ -13,6 +13,12 @@ import {
   IconButton,
 } from 'react-mdl';
 
+import styled from 'styled-components';
+
+const Div = styled.div`
+  display: flex;
+`;
+
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -25,10 +31,9 @@ class Projects extends Component {
     /* iOS */
     if (activeTab === 0) {
       return (
-        <div className="projects-grid">
-          <p>Dev account currently expeired so appstore links don't work :(</p>
+        <Div>
           {/* Project 1 */}
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+          <Card shadow={5} style={{ margin: 'auto' }}>
             <CardTitle
               style={{
                 color: '#fff',
@@ -45,7 +50,14 @@ class Projects extends Component {
               your daily life. Designed and developed by yours truly.
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
+              <Button
+                colored
+                href="https://github.com/willieLjohnson/Vybes"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                GitHub
+              </Button>
               <Button
                 colored
                 href="https://itunes.apple.com/us/developer/willie-johnson/id1384634583?mt=8"
@@ -59,14 +71,14 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
-        </div>
+        </Div>
       );
     }
 
     /* Unity */
     if (activeTab === 1) {
       return (
-        <div className="projects-grid">
+        <Div>
           {/* Project 1 */}
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
             <CardTitle
@@ -114,33 +126,33 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
-        </div>
+        </Div>
       );
     }
 
     /* React */
     if (activeTab === 2) {
       return (
-        <div className="projects-grid">
+        <Div>
           {/* Project 1 */}
           <h1> This is react</h1>
-        </div>
+        </Div>
       );
     }
 
     /* MongoDB */
     if (activeTab === 3) {
       return (
-        <div>
+        <Div>
           <h1>This is MongoDB</h1>
-        </div>
+        </Div>
       );
     }
 
     return (
-      <div>
+      <Div>
         <h1>404! How'd you get all the way here!?</h1>
-      </div>
+      </Div>
     );
   };
 
