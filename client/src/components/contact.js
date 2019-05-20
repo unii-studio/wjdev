@@ -1,7 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import Modal from 'react-modal';
-import { Grid, Cell } from 'react-mdl';
+import { Cell } from 'react-mdl';
+
+import ContactForm from '../blocks/ContactForm';
 
 Modal.setAppElement('div');
 
@@ -156,13 +158,13 @@ export default class Contact extends React.Component {
     const { modalIsOpen, resData } = this.state;
 
     return (
-      <div className="contact-body">
-        <Grid className="contact-grid">
+      <ContactForm>
+        <ContactForm.Grid>
           <Cell col={6}>
-            <form className="contact-form">
+            <ContactForm.Form>
               <h2>Let&apos;s get in contact</h2>
               <hr />
-              <label htmlFor="name">Name</label>
+              <ContactForm.Label htmlFor="name">Name</ContactForm.Label>
               <input
                 name="name"
                 value={name}
@@ -173,8 +175,8 @@ export default class Contact extends React.Component {
                   margin: `${nameError.length > 0 ? '0' : ''}`,
                 }}
               />
-              <p className="form-error">{nameError}</p>
-              <label htmlFor="email">Email</label>
+              <ContactForm.Error>{nameError}</ContactForm.Error>
+              <ContactForm.Label htmlFor="email">Email</ContactForm.Label>
               <input
                 name="email"
                 value={email}
@@ -185,8 +187,8 @@ export default class Contact extends React.Component {
                   margin: `${emailError.length > 0 ? '0' : ''}`,
                 }}
               />
-              <p className="form-error">{emailError}</p>
-              <label htmlFor="subject">Subject</label>
+              <ContactForm.Error>{emailError}</ContactForm.Error>
+              <ContactForm.Label htmlFor="subject">Subject</ContactForm.Label>
               <input
                 name="subject"
                 value={subject}
@@ -197,8 +199,8 @@ export default class Contact extends React.Component {
                   margin: `${subjectError.length > 0 ? '0' : ''}`,
                 }}
               />
-              <p className="form-error">{subjectError}</p>
-              <label htmlFor="message">Message</label>
+              <ContactForm.Error>{subjectError}</ContactForm.Error>
+              <ContactForm.Label htmlFor="message">Message</ContactForm.Label>
               <textarea
                 name="message"
                 onChange={e => this.change(e)}
@@ -208,17 +210,17 @@ export default class Contact extends React.Component {
                   margin: `${messageError.length > 0 ? '0' : ''}`,
                 }}
               />
-              <p className="form-error">{messageError}</p>
-              <button
+              <ContactForm.Error>{messageError}</ContactForm.Error>
+              <ContactForm.Button
                 className="btn-primary"
                 type="submit"
                 onClick={e => this.onSubmit(e)}
               >
                 Send
-              </button>
-            </form>
+              </ContactForm.Button>
+            </ContactForm.Form>
           </Cell>
-        </Grid>
+        </ContactForm.Grid>
 
         <Modal
           isOpen={modalIsOpen}
@@ -245,7 +247,7 @@ export default class Contact extends React.Component {
             <p>I&apos;ll be in touch with you soon.</p>
           </div>
         </Modal>
-      </div>
+      </ContactForm>
     );
   }
 }
