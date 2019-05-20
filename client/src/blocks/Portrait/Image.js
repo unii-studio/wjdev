@@ -6,7 +6,7 @@ const Image = styled.img.attrs(({ size }) => ({
 
   height: size || '400px',
 }))`
-  height: 400px;
+  height: ${props => props.height};
   border-radius: 50%;
 `;
 
