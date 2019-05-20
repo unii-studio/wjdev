@@ -93,8 +93,8 @@ class Projects extends Component {
               Surge
             </CardTitle>
             <CardText>
-              Super intense arcade game insipred by Pong. Music changes with
-              difficult and there are a variaty of levels to get high-scores in.
+              Super intense arcade game inspired by Pong. Music changes with
+              difficult and there are a variety of levels to get high-scores in.
             </CardText>
             <CardActions border>
               <Button

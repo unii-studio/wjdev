@@ -4,44 +4,28 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 
+import Portrait from '../blocks/Portrait';
+import P from '../elements/P';
+import H5 from '../elements/H5';
+
 const Resume = () => (
   <div>
     <Grid>
       <Cell col={4}>
-        <div style={{ textAlign: 'center' }}>
-          <img
-            className="portrait-img"
-            src="portrait-1.jpg"
-            alt="Portrait of Willie Liwa Johnson"
-          />
-        </div>
-        <div style={{ textAlign: 'center', fontFamily: 'Open Sans' }}>
-          <h2
-            style={{
-              paddingTop: '0.6em',
-              fontFamily: 'Raleway',
-            }}
-          >
-            Willie Liwa Johnson
-          </h2>
-          <h4 style={{ color: 'grey', fontFamily: 'Open Sans' }}>
-            Software Developer
-          </h4>
-          <hr
-            style={{
-              borderTop: '3px solid #061161',
-              width: '100%',
-            }}
-          />
-          <p style={{ fontFamily: 'Open Sans' }}>
+        <Portrait>
+          <Portrait.Image />
+          <Portrait.Name />
+          <Portrait.Title />
+          <Portrait.Split />
+          <P>
             I'm a software engineer who specializes in iOS Development. With a
             variety of projects under my belt I have experience using many
             different technologies. I love to develop video games, productivity
             apps, augmented reality apps, and content driven websites.
-          </p>
-          <hr style={{ borderTop: '3px solid #061161', width: '100%' }} />
-          <h5 style={{ fontFamily: 'Open Sans' }}>Address</h5>
-          <p>
+          </P>
+          <Portrait.Split />
+          <H5>Address</H5>
+          <P>
             <a
               href="https://www.google.com/maps/place/MONTGOMRY+VLG,+MD+20879/@39.1708499,-77.1858614,14.74z/data=!4m5!3m4!1s0x89b62b579a467b6d:0xe2ea76d8df38b7a8!8m2!3d39.1733025!4d-77.1772737"
               rel="noopener noreferrer"
@@ -49,9 +33,9 @@ const Resume = () => (
             >
               Gaithersburg, MD 20879
             </a>
-          </p>
-          <h5 style={{ fontFamily: 'Open Sans' }}>Phone</h5>
-          <p style={{ fontFamily: 'Open Sans' }}>
+          </P>
+          <H5>Phone</H5>
+          <P>
             <a
               href="tel:240-550-5589"
               rel="noopener noreferrer"
@@ -59,9 +43,9 @@ const Resume = () => (
             >
               (240) 550-5589
             </a>
-          </p>
-          <h5 style={{ fontFamily: 'Open Sans' }}>Email</h5>
-          <p style={{ fontFamily: 'Open Sans' }}>
+          </P>
+          <H5>Email</H5>
+          <P>
             <a
               href={"mailto:liwa.johnson@gmail.com?subject=Let's get in touch"}
               rel="noopener noreferrer"
@@ -69,9 +53,9 @@ const Resume = () => (
             >
               liwa.johnson@gmail.com
             </a>
-          </p>
-          <h5 style={{ fontFamily: 'Open Sans' }}>Web</h5>
-          <p>
+          </P>
+          <H5>Web</H5>
+          <P>
             <a
               href="http://unii.design"
               rel="noopener noreferrer"
@@ -79,9 +63,9 @@ const Resume = () => (
             >
               unii.design
             </a>
-          </p>
-          <hr style={{ borderTop: '3px solid #061161', width: '100%' }} />
-        </div>
+          </P>
+          <Portrait.Split />
+        </Portrait>
       </Cell>
       <Cell className="resume-right-col" col={8}>
         {/* Skills */}
