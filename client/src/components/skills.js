@@ -10,7 +10,6 @@ const Skills = ({ skill, progress }) => (
         style={{
           margin: 'auto',
           width: '75',
-          backgroundColor: '#061161',
           alignSelf: 'flex-end',
         }}
         progress={progress}

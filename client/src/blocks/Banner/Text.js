@@ -1,9 +1,9 @@
 import styled from 'styled-components';
+import P from '../../elements/P';
 
-const Text = styled.p`
+const Text = styled(P)`
   color: white;
-  font-size: 20px;
-  /* padding: 1em; */
+  font-size: 22px;
 `;
 
 export default Text;

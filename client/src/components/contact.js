@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import { Cell } from 'react-mdl';
 
 import ContactForm from '../blocks/ContactForm';
+import H2 from '../elements/H2';
 
 Modal.setAppElement('div');
 
@@ -162,8 +163,8 @@ export default class Contact extends React.Component {
         <ContactForm.Grid>
           <Cell col={6}>
             <ContactForm.Form>
-              <h2>Let&apos;s get in contact</h2>
-              <hr />
+              <H2>Let&apos;s get in contact</H2>
+              <ContactForm.Split />
               <ContactForm.Label htmlFor="name">Name</ContactForm.Label>
               <input
                 name="name"

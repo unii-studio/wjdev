@@ -15,7 +15,7 @@ const Landing = () => (
           <Banner.Text>
             IOS APPS | UNITY GAMES | REACT WEBSITES | MONGO DATABASES
           </Banner.Text>
-          <hr />
+          <Banner.Split />
           <Social>
             {/* LinkedIn */}
             <Social.Link

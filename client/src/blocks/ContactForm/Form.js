@@ -8,10 +8,6 @@ const Form = styled.form`
   margin-top: 15%;
   padding: 1em;
 
-  .h2 {
-    font-family: 'Raleway', Sans-Serif;
-  }
-
   input,
   textarea {
     width: 400px;
