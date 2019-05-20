@@ -8,9 +8,6 @@ const Image = styled.img.attrs(({ size }) => ({
 }))`
   height: 400px;
   border-radius: 50%;
-  /* padding-top: 5em;
-  padding-bottom: 4em; */
-  /* filter: invert(100%); */
 `;
 
 export default Image;
