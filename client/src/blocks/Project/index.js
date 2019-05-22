@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-mdl';
+import { oneOfType, arrayOf, node } from 'prop-types';
 
 import Text from './Text';
 import Title from './Title';
@@ -11,15 +12,19 @@ const CardStyle = {
   margin: 'auto',
 };
 
-const Project = props => (
+const Project = ({ children }) => (
   <Card shadow={5} style={CardStyle}>
-    {props.children}
+    {children}
   </Card>
 );
 
+Project.propTypes = {
+  children: oneOfType([arrayOf(node), node]).isRequired,
+};
+
 Project.Text = Text;
 Project.Title = Title;
-Project.ButtonLink = ButtonLink;
+Project.Button = ButtonLink;
 Project.Actions = Actions;
 Project.Spacer = Spacer;
 

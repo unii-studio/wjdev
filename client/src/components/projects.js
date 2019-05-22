@@ -45,12 +45,12 @@ class Projects extends Component {
               your daily life. Designed and developed by yours truly.
             </Project.Text>
             <Project.Actions>
-              <Project.ButtonLink
+              <Project.Button
                 text="GitHub"
                 link="https://github.com/willieLjohnson/Vybes"
               />
               <Project.Spacer />
-              <Project.ButtonLink
+              <Project.Button
                 text="iOS"
                 link="https://itunes.apple.com/us/developer/willie-johnson/id1384634583?mt=8"
               />
@@ -77,15 +77,15 @@ class Projects extends Component {
               difficult and there are a variety of levels to get high-scores in.
             </Project.Text>
             <Project.Actions>
-              <Project.ButtonLink
+              <Project.Button
                 text="GitHub"
                 link="https://github.com/willieLjohnson/Surge"
               />
-              <Project.ButtonLink
+              <Project.Button
                 text="iOS"
                 link="https://itunes.apple.com/US/app/id1392635397?mt=8"
               />
-              <Project.ButtonLink
+              <Project.Button
                 text="Android"
                 link="https://play.google.com/store/apps/details?id=com.willynillygames.surge"
               />
