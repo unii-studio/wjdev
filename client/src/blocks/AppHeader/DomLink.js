@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 
-const DomLink = ({ to, children }) => (
+import { oneOfType, arrayOf, node, string } from 'prop-types';
+
+const DomLink = ({ children, to }) => (
   <Link
     style={{
       textDecoration: 'none',
@@ -14,5 +16,10 @@ const DomLink = ({ to, children }) => (
     {children}
   </Link>
 );
+
+DomLink.propTypes = {
+  children: oneOfType([arrayOf(node), node]).isRequired,
+  to: string.isRequired,
+};
 
 export default DomLink;
