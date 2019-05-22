@@ -213,7 +213,6 @@ export default class Contact extends React.Component {
               />
               <ContactForm.Error>{messageError}</ContactForm.Error>
               <ContactForm.Button
-                className="btn-primary"
                 type="submit"
                 onClick={e => this.onSubmit(e)}
               >
