@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardTitle } from 'react-mdl';
+import { oneOfType, arrayOf, node, string } from 'prop-types';
 
 const TitleStyle = {
   color: '#fff',
@@ -8,10 +9,15 @@ const TitleStyle = {
   fontFamily: 'Open Sans',
 };
 
-const Title = props => (
-  <CardTitle shadow={5} style={{ background: props.img, ...TitleStyle }}>
-    {props.children}
+const Title = ({ children, img }) => (
+  <CardTitle shadow={5} style={{ background: img, ...TitleStyle }}>
+    {children}
   </CardTitle>
 );
+
+Title.propTypes = {
+  children: oneOfType([arrayOf(node), node]).isRequired,
+  img: string.isRequired,
+};
 
 export default Title;
