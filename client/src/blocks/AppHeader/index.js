@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 import { Header } from 'react-mdl';
+import DomLink from './DomLink';
 
 const AppHeader = styled(Header)`
   background: #780206; /* fallback for old browsers */
@@ -16,5 +17,7 @@ const AppHeader = styled(Header)`
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: 'Raleway', Sans-Serif;
 `;
+
+AppHeader.Link = DomLink;
 
 export default AppHeader;
