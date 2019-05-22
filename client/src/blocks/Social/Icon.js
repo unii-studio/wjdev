@@ -5,10 +5,15 @@ const Icon = styled.i`
   font-size: 5em;
   padding: 8px;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, font-size 0.2s ease;
+
   &:hover {
     color: #b14aed;
-    ${'' /* text-decoration: underline; */}
+    font-size: 5.3em;
+  }
+
+  &:active {
+    font-size: 7em;
   }
 `;
 
