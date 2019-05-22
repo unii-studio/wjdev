@@ -7,30 +7,14 @@ import AppHeader from './blocks/AppHeader';
 const App = () => (
   <div>
     <Layout>
-      <AppHeader
-        title={
-          <div>
-            <Link // TODO: Replace with styled component. Currently not possible due to react-mdl css.
-              style={{
-                textDecoration: 'none',
-                color: 'white',
-                fontFamily: 'Raleway',
-              }}
-              to="/"
-            >
-              WJ DEV
-            </Link>
-          </div>
-        }
-        scroll
-      >
+      <AppHeader title={<AppHeader.Link to="/">WJ DEV</AppHeader.Link>} scroll>
         <Navigation>
           {/* <Link className="one" to="/aboutme">
                 ABOUT
               </Link> */}
-          <Link to="/projects">PROJECTS</Link>
-          <Link to="/resume">RESUME</Link>
-          <Link to="/contact">CONTACT</Link>
+          <AppHeader.Link to="/projects">PROJECTS</AppHeader.Link>
+          <AppHeader.Link to="/resume">RESUME</AppHeader.Link>
+          <AppHeader.Link to="/contact">CONTACT</AppHeader.Link>
         </Navigation>
       </AppHeader>
       <Content>
