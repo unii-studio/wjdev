@@ -2,9 +2,7 @@
 
 # wjdev | portfolio & resume
 
-> Design, Games, Applications
-
-TODO: Badges
+> iOS, Unity, React, MongoDB
 
 <p align="center">
   <a href="https://www.unii.design" target="_blank"><img src="https://i.imgur.com/TvmZHF8.png" height="500" alt="logo"></a>
