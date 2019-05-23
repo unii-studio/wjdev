@@ -1,15 +1,14 @@
-<a href="https://unii.design" target="_blank"><img src="https://i.imgur.com/0as1snw.png" height="150" alt="logo"></a>
+<a href="https://www.unii.design" target="_blank"><img src="https://i.imgur.com/0as1snw.png" height="100" alt="logo"></a>
 
-# UNii – Portfolio & Blog
+# wjdev | portfolio & resume
 
 > Design, Games, Applications
 
 TODO: Badges
 
 <p align="center">
-  <a href="https://me.unii.design" target="_blank"><img src="https://i.imgur.com/TvmZHF8.png" height="500" alt="logo"></a>
+  <a href="https://www.unii.design" target="_blank"><img src="https://i.imgur.com/TvmZHF8.png" height="500" alt="logo"></a>
 </p>
-## Features
 
 ---
 
