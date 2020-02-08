@@ -13,7 +13,7 @@
 ## Quick Start
 
 ```sh
-  git clone https://github.com/unii-studio/unii.design.git
-  cd unii.design && npm install && npm install --prefix client
+  git clone https://github.com/unii-studio/wjdev.git
+  cd wjdev && npm install && npm install --prefix client
   npm run dev
 ```
