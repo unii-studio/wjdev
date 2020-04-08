@@ -163,7 +163,7 @@ export default class Contact extends React.Component {
         <ContactForm.Grid>
           <Cell col={6}>
             <ContactForm.Form>
-              <H2>Let&apos;s get in contact</H2>
+              <H2>Let&apos;s Chat!</H2>
               <ContactForm.Split />
               <ContactForm.Label htmlFor="name">Name</ContactForm.Label>
               <input
