@@ -102,9 +102,29 @@ class Projects extends Component {
     if (activeTab === 2) {
       return (
         <Div>
-          {/* Project 1 */}
-          <H1>This is website uses react</H1>
-        </Div>
+        {/* Project 1 */}
+        <Project>
+          <Project.Title img="url() no-repeat center center">
+            WJDev: React Portfolio Website 
+          </Project.Title>
+          <Project.Text>
+            Portfolio website maded using React and MongoDB.
+          </Project.Text>
+          <Project.Actions>
+            <Project.Button
+              text="GitHub"
+              link="https://github.com/willieLjohnson/wjdev"
+            />
+            <Project.Button
+              text="Website"
+              link="https://unii.herokuapp.com"
+            />
+          </Project.Actions>
+          <CardMenu style={{ color: '#fff' }}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Project>
+      </Div>
       );
     }
 
