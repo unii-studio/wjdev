@@ -3,11 +3,11 @@ import React from 'react';
 
 import { oneOfType, arrayOf, node, string } from 'prop-types';
 
-const DomLink = ({ children, to }) => (
+const DomLink = ({ color='white', children, to }) => (
   <Link
     style={{
       textDecoration: 'none',
-      color: 'white',
+      color: color,
       fontFamily: 'Raleway',
       padding: '1em',
     }}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Navigation, Content } from 'react-mdl';
+import { Layout, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Main from './components/main';
 import AppHeader from './blocks/AppHeader';
@@ -17,6 +17,18 @@ const App = () => (
           <AppHeader.Link to="/contact">CONTACT</AppHeader.Link>
         </Navigation>
       </AppHeader>
+      <Drawer
+        title={<AppHeader.Link to="/">WJ DEV</AppHeader.Link>}
+        style={{
+          backgroundColor: "#780206",
+        }}
+      >
+        <Navigation>
+          <AppHeader.Link to="/projects">PROJECTS</AppHeader.Link>
+          <AppHeader.Link to="/resume">RESUME</AppHeader.Link>
+          <AppHeader.Link to="/contact">CONTACT</AppHeader.Link>
+        </Navigation>
+      </Drawer>
       <Content>
         <div className="page-content" />
         <Main />
