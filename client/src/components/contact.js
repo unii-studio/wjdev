@@ -163,9 +163,9 @@ export default class Contact extends React.Component {
         <ContactForm.Grid>
           <Cell col={6}>
             <ContactForm.Form>
-              <H2>Let&apos;s Chat!</H2>
+              <H2>LET&apos;S CHAT</H2>
               <ContactForm.Split />
-              <ContactForm.Label htmlFor="name">Name</ContactForm.Label>
+              <ContactForm.Label htmlFor="name">NAME</ContactForm.Label>
               <input
                 name="name"
                 value={name}
@@ -177,7 +177,7 @@ export default class Contact extends React.Component {
                 }}
               />
               <ContactForm.Error>{nameError}</ContactForm.Error>
-              <ContactForm.Label htmlFor="email">Email</ContactForm.Label>
+              <ContactForm.Label htmlFor="email">EMAIL</ContactForm.Label>
               <input
                 name="email"
                 value={email}
@@ -189,7 +189,7 @@ export default class Contact extends React.Component {
                 }}
               />
               <ContactForm.Error>{emailError}</ContactForm.Error>
-              <ContactForm.Label htmlFor="subject">Subject</ContactForm.Label>
+              <ContactForm.Label htmlFor="subject">SUBJECT</ContactForm.Label>
               <input
                 name="subject"
                 value={subject}
@@ -201,7 +201,7 @@ export default class Contact extends React.Component {
                 }}
               />
               <ContactForm.Error>{subjectError}</ContactForm.Error>
-              <ContactForm.Label htmlFor="message">Message</ContactForm.Label>
+              <ContactForm.Label htmlFor="message">MESSAGE</ContactForm.Label>
               <textarea
                 name="message"
                 onChange={e => this.change(e)}
