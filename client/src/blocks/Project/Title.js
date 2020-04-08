@@ -4,8 +4,8 @@ import { oneOfType, arrayOf, node, string } from 'prop-types';
 
 const TitleStyle = {
   color: '#fff',
-  height: '176px',
-  backgroundSize: 'cover',
+  height: '250px',
+  backgroundSize: 'contain',
   fontFamily: 'Open Sans',
 };
 
