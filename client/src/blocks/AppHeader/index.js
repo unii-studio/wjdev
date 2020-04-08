@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import React from 'react';
 import { Header } from 'react-mdl';
 import DomLink from './DomLink';
 
@@ -16,6 +15,10 @@ const AppHeader = styled(Header)`
     #061161
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: 'Raleway', Sans-Serif;
+  color: white;
+  @media (max-width: 720px) {
+    font-size: 3.3em;
+  }
 `;
 
 AppHeader.Link = DomLink;

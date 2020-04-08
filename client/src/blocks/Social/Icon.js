@@ -15,6 +15,9 @@ const Icon = styled.i`
   &:active {
     font-size: 7em;
   }
+  @media (max-width: 720px) {
+    font-size: 3.3em;
+  }
 `;
 
 export default Icon;

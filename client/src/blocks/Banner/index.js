@@ -11,6 +11,9 @@ const Banner = styled.div`
   margin: auto;
   border-radius: 10px;
   padding: 2em;
+  @media (max-width: 720px) {
+    width: 100%;
+  }
 `;
 
 Banner.Title = Title;
