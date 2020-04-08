@@ -1,0 +1,417 @@
+{
+    "default": {
+        "current_profile": "",
+        "custom": {
+            "command": "Custom",
+            "state": false,
+            "tooltip": "Custom option, double click to edit."
+        },
+        "favorites": [],
+        "multidl_txt": "",
+        "parallel": true,
+        "select_on_focus": true,
+        "show_collapse_arrows": false,
+        "use_win_accent": false
+    },
+    "parameters": {
+        "Add metadata": {
+            "active option": 0,
+            "command": "--add-metadata",
+            "dependency": null,
+            "options": null,
+            "state": true,
+            "tooltip": "Write metadata to the video file."
+        },
+        "Add thumbnail": {
+            "active option": 0,
+            "command": "--embed-thumbnail",
+            "dependency": "Convert to audio",
+            "options": null,
+            "state": true,
+            "tooltip": "Include thumbnail on audio files."
+        },
+        "Audio quality": {
+            "active option": 0,
+            "command": "--audio-quality {}",
+            "dependency": "Convert to audio",
+            "options": [
+                "0",
+                "5",
+                "9"
+            ],
+            "state": true,
+            "tooltip": "Specify ffmpeg/avconv audio quality.\ninserta value between\n0 (better) and 9 (worse)for VBR\nor a specific bitrate like 128K"
+        },
+        "Convert to audio": {
+            "active option": 0,
+            "command": "-x --audio-format {}",
+            "dependency": null,
+            "options": [
+                "mp3"
+            ],
+            "state": true,
+            "tooltip": "Convert video files to audio-only files\nRequires ffmpeg, avconv and ffprobe or avprobe."
+        },
+        "Custom referer": {
+            "active option": 0,
+            "command": "--referer {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Specify a custom referer, use if the video access is restricted to one domain."
+        },
+        "Custom user agent": {
+            "active option": 0,
+            "command": "--user-agent {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Specify a custom user agent."
+        },
+        "Don't continue files": {
+            "active option": 0,
+            "command": "--no-continue",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Do not resume partially downloaded files."
+        },
+        "Don't overwrite files": {
+            "active option": 0,
+            "command": "--no-overwrites",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Do not overwrite files"
+        },
+        "Don't use .part files": {
+            "active option": 0,
+            "command": "--no-part",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Do not use .part files - write directly into output file."
+        },
+        "Download location": {
+            "active option": 0,
+            "command": "-o {}",
+            "dependency": null,
+            "options": [
+                "C:/Users/work/Downloads/OH/Dave East - Survival/",
+                "C:/Users/work/Downloads/OH/Future & Juice WRLD - WRLD On Drugs/",
+                "C:/Users/work/Downloads/OH/A Boogie Wit Da  Hoodie - Artist 2.0/",
+                "C:/Users/work/Downloads/OH/G Herbo - PTSD/",
+                "C:/Users/work/Downloads/OH/Roddy Rich - Please Excuse Me for Being Antisocial/",
+                "C:/Users/work/Downloads/OH/",
+                "E:/hub/wjdev/DL/"
+            ],
+            "state": true,
+            "tooltip": "Select download location."
+        },
+        "Download order": {
+            "active option": 0,
+            "command": "--playlist-{}",
+            "dependency": null,
+            "options": [
+                "reverse",
+                "random"
+            ],
+            "state": false,
+            "tooltip": "Download playlist videos in reverse/random order."
+        },
+        "Download speed limit": {
+            "active option": 0,
+            "command": "--limit-rate {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Maximum download rate in bytes per second (e.g. 50K or 4.2M)."
+        },
+        "Embed subs": {
+            "active option": 0,
+            "command": "--embed-subs",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Embed subtitles in the video (only for mp4, webm and mkv videos)"
+        },
+        "Force generic extractor": {
+            "active option": 0,
+            "command": "--force-generic-extractor",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Force extraction to use the generic extractor"
+        },
+        "Force ipv4/6": {
+            "active option": 0,
+            "command": "--{}",
+            "dependency": null,
+            "options": [
+                "force-ipv4",
+                "force-ipv6"
+            ],
+            "state": false,
+            "tooltip": "Make all connections via ipv4/6."
+        },
+        "Geo bypass URL": {
+            "active option": 0,
+            "command": "--geo-verification-proxy {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Use this proxy to verify the IP address for some geo-restricted sites.\nThe default proxy specified by --proxy (or none, if the options is not present)\nis used for the actual downloading."
+        },
+        "Geo bypass country CODE": {
+            "active option": 0,
+            "command": "--geo-bypass-country {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Force bypass geographic restriction with explicitly provided\ntwo-letter ISO 3166-2 country code (experimental)."
+        },
+        "Ignore errors": {
+            "active option": 0,
+            "command": "-i",
+            "dependency": null,
+            "options": null,
+            "state": true,
+            "tooltip": "Ignores errors, and jumps to next element instead of stopping."
+        },
+        "Keep archive": {
+            "active option": 0,
+            "command": "--download-archive {}",
+            "dependency": null,
+            "options": [
+                "Archive.txt"
+            ],
+            "state": false,
+            "tooltip": "Saves links to a textfile to avoid duplicate downloads later."
+        },
+        "Match titles": {
+            "active option": 0,
+            "command": "--match-title {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Download only matching titles (regex or caseless sub-string)."
+        },
+        "Max downloads": {
+            "active option": 0,
+            "command": "--max-downloads {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Abort after downloading a certain number of files."
+        },
+        "Max sleep interval": {
+            "active option": 0,
+            "command": "--max-sleep-interval {}",
+            "dependency": "Min sleep interval",
+            "options": [],
+            "state": false,
+            "tooltip": "Upper bound of a range for randomized sleep before each download\n(maximum possible number of seconds to sleep).\nMust only be used along with --min-sleep-interval."
+        },
+        "Maximum size": {
+            "active option": 0,
+            "command": "--max-filesize {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Do not download any videos bigger than SIZE (e.g. 50k or 44.6m)."
+        },
+        "Merge output format": {
+            "active option": 0,
+            "command": "--merge-output-format {}",
+            "dependency": null,
+            "options": [
+                "mp4",
+                "mkv",
+                "ogg",
+                "webm",
+                "flv"
+            ],
+            "state": false,
+            "tooltip": "If a merge is required (e.g. bestvideo+bestaudio),\noutput to given container format.\nOne of mkv, mp4, ogg, webm, flv.\nIgnored if no merge is required"
+        },
+        "Metadata from title": {
+            "active option": 0,
+            "command": "--metadata-from-title {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Parse additional metadata like song title /artist from the video title.\nThe formatsyntax is the same as --output.\nRegular expression with named capture groups mayalso be used.\nThe parsed parameters replace existing values.\n\nExample:\n\"%(artist)s - %(title)s\" matches atitle like \"Coldplay - Paradise\".\nExample(regex):\n\"(?P<artist>.+?) - (?P<title>.+)\""
+        },
+        "Min sleep interval": {
+            "active option": 0,
+            "command": "--sleep-interval {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Number of seconds to sleep before each download;\nwhen used alone or a lower bound of a range for randomized sleep before each\ndownload when used along with max sleep interval."
+        },
+        "Minimum size": {
+            "active option": 0,
+            "command": "--min-filesize {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Do not download any videos smaller than SIZE (e.g. 50k or 44.6m)."
+        },
+        "No playlist": {
+            "active option": 0,
+            "command": "--no-playlist ",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Download only the video, if the URL refers to a video and a playlist."
+        },
+        "No post overwrite": {
+            "active option": 0,
+            "command": "--no-post-overwrites",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Do not overwrite post-processed files;\nthe post-processed files are overwritten by default."
+        },
+        "Playlist end": {
+            "active option": 0,
+            "command": "--playlist-end {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Playlist video to end at (default is last)."
+        },
+        "Playlist items": {
+            "active option": 0,
+            "command": "--playlist-items {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Playlist video items to download.\nSpecify indices of the videos in the playlist separated by commas like:\n\"1,2,5,8\" if you want to download videos indexed 1, 2, 5, 8 in the playlist.\nYou can specify range:\"1-3,7,10-13\"\nwill download the videos at index:\n1, 2, 3, 7, 10, 11, 12 and 13."
+        },
+        "Playlist start": {
+            "active option": 0,
+            "command": "--playlist-start {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Playlist video to start at (default is 1)."
+        },
+        "Prefer native/ffmpeg": {
+            "active option": 0,
+            "command": "--hls-prefer-{}",
+            "dependency": null,
+            "options": [
+                "ffmpeg",
+                "native"
+            ],
+            "state": false,
+            "tooltip": "Use the native HLS downloader instead of ffmpeg, or vice versa."
+        },
+        "Recode video": {
+            "active option": 0,
+            "command": "--recode-video {}",
+            "dependency": null,
+            "options": [
+                "mp4",
+                "flv",
+                "ogg",
+                "webm",
+                "mkv",
+                "avi"
+            ],
+            "state": false,
+            "tooltip": "Encode the video to another format if necessary.\nCurrently supported: mp4|flv|ogg|webm|mkv|avi."
+        },
+        "Reject titles": {
+            "active option": 0,
+            "command": "--reject-title {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Skip download for matching titles (regex or caseless sub-string)."
+        },
+        "Retry rate": {
+            "active option": 0,
+            "command": "--retries {}",
+            "dependency": null,
+            "options": [
+                10,
+                15
+            ],
+            "state": false,
+            "tooltip": "Number of retries (default is 10), or \"infinite\"."
+        },
+        "Socket timeout": {
+            "active option": 0,
+            "command": "--socket-timeout {}",
+            "dependency": null,
+            "options": [
+                10,
+                60,
+                300
+            ],
+            "state": false,
+            "tooltip": "Time to wait before giving up, in seconds."
+        },
+        "Source IP": {
+            "active option": 0,
+            "command": "--source-address {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Client-side IP address to bind to."
+        },
+        "Strict file names": {
+            "active option": 0,
+            "command": "--restrict-filenames",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Sets strict naming, to prevent unsupported characters in names."
+        },
+        "Use proxy": {
+            "active option": 0,
+            "command": "--proxy {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Use the specified HTTP/HTTPS/SOCKS proxy."
+        },
+        "Username": {
+            "active option": 0,
+            "command": "--username {}",
+            "dependency": null,
+            "options": [],
+            "state": false,
+            "tooltip": "Username of your account. Password will be asked for on run."
+        },
+        "Verbose": {
+            "active option": 0,
+            "command": "--verbose",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Print various debugging information."
+        },
+        "Video format": {
+            "active option": 0,
+            "command": "--format {}",
+            "dependency": null,
+            "options": [
+                "mp4"
+            ],
+            "state": false,
+            "tooltip": "Video format code."
+        },
+        "Write subtitle file": {
+            "active option": 0,
+            "command": "--write-sub",
+            "dependency": null,
+            "options": null,
+            "state": false,
+            "tooltip": "Write subtitle file."
+        }
+    }
+}

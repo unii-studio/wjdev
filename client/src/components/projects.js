@@ -37,7 +37,7 @@ class Projects extends Component {
         <Div>
           {/* Project 1 */}
           <Project>
-            <Project.Title img="url(https://i.imgur.com/lFuuL5V.jpg) no-repeat center center">
+            <Project.Title img="url(https://res.cloudinary.com/deaktgkfq/image/upload/v1586290897/WJDEV/vybes.jpg) no-repeat center center">
               Vybes
             </Project.Title>
             <Project.Text>
@@ -69,7 +69,7 @@ class Projects extends Component {
         <Div>
           {/* Project 1 */}
           <Project>
-            <Project.Title img="url(https://i.imgur.com/LhwFdwI.gif) no-repeat center center">
+            <Project.Title img="url(https://res.cloudinary.com/deaktgkfq/image/upload/v1586291177/WJDEV/surge.gif) no-repeat center center">
               Surge
             </Project.Title>
             <Project.Text>
@@ -103,7 +103,7 @@ class Projects extends Component {
       return (
         <Div>
           {/* Project 1 */}
-          <H1>This is react</H1>
+          <H1>This is website uses react</H1>
         </Div>
       );
     }
@@ -112,7 +112,7 @@ class Projects extends Component {
     if (activeTab === 3) {
       return (
         <Div>
-          <H1>This is MongoDB</H1>
+          <H1>This website uses MongoDB</H1>
         </Div>
       );
     }
