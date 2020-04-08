@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const Form = styled.form`
   display: grid;
-  background: rgba(0, 0, 0, 0.1);
-  /* border: black 2px solid; */
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   border-radius: 10px;
   margin-top: 15%;
   padding: 1em;
