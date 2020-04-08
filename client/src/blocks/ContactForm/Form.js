@@ -10,7 +10,7 @@ const Form = styled.form`
 
   input,
   textarea {
-    width: 400px;
+    width: 90%;
     display: block;
     border: none;
     border-radius: 5px;
