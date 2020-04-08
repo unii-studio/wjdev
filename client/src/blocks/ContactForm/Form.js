@@ -20,7 +20,9 @@ const Form = styled.form`
     letter-spacing: 0.25px;
     font-size: 1em;
     justify-self: center;
-    background: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset  0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset  0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: inset  0px 0px 3px 0px rgba(0,0,0,0.2);
   }
 
   input {
