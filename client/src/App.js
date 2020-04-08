@@ -20,6 +20,7 @@ const App = () => (
         title={<AppHeader.Link to="/">WJ DEV</AppHeader.Link>}
         style={{
           backgroundColor: "#780206",
+          border: "none",
         }}
       >
         <Navigation>
