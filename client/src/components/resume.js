@@ -72,12 +72,12 @@ const Resume = () => (
     <History col={8}>
       {/* Skills */}
       <H2>Skills</H2>
-      <Skills skill="iOS/Swift" progress={100} />
-      <Skills skill="Unity" progress={85} />
-      <Skills skill="HTML/CSS" progress={70} />
-      <Skills skill="JavaScript" progress={50} />
-      <Skills skill="NodeJS" progress={40} />
-      <Skills skill="React" progress={25} />
+      <Skills skill="Git/GitHub" years={5} progress={100} />
+      <Skills skill="Web Development" years={3} progress={85} />
+      <Skills skill="Game Development" years={3} progress={80} />
+      <Skills skill="Python" years={3} progress={70} />
+      <Skills skill="Mobile Development" years={2} progress={65} />
+      <Skills skill="MS Office" years={3} progress={80} />
       <History.Split />
 
       {/* Education */}
