@@ -16,17 +16,21 @@ const Resume = () => (
     <Cell col={4}>
       <Portrait>
         <Portrait.Image />
-        <H2>Willie Liwa Johnson</H2>
-        <Portrait.Title>Software Developer</Portrait.Title>
+        <H2>Willie Johnson</H2>
+        <Portrait.Title>Full-Stack Developer</Portrait.Title>
         <Portrait.Split />
         <P>
-          I'm a software engineer who specializes in iOS Development. With a
-          variety of projects under my belt I have experience using many
-          different technologies. I love to develop video games, productivity
-          apps, augmented reality apps, and content driven websites.
+          “I am a Full-Stack Developer experienced in mobile, web, and game
+          development. I have a passion for Computer Science that spans many
+          different subjects from designing applications to modeling 3D
+          animations. This passion gives me the drive to learn and hone my
+          skills every day, undaunted by difficult problems and projects. Given
+          the opportunity, I will bring this passion, eagerness too learn, and
+          tenacity to build business applications and solve real world problems
+          for great companies like yours.“
         </P>
         <Portrait.Split />
-        <H5>Address</H5>
+        {/* <H5>Address</H5>
         <P>
           <a
             href="https://www.google.com/maps/place/MONTGOMRY+VLG,+MD+20879/@39.1708499,-77.1858614,14.74z/data=!4m5!3m4!1s0x89b62b579a467b6d:0xe2ea76d8df38b7a8!8m2!3d39.1733025!4d-77.1772737"
@@ -35,11 +39,11 @@ const Resume = () => (
           >
             Gaithersburg, MD 20879
           </a>
-        </P>
+        </P> */}
         <H5>Phone</H5>
         <P>
-          <a href="tel:240-550-5589" rel="noopener noreferrer" target="_blank">
-            (240) 550-5589
+          <a href="tel:240-907-8829" rel="noopener noreferrer" target="_blank">
+            (240) 907-8829
           </a>
         </P>
         <H5>Email</H5>
@@ -55,11 +59,11 @@ const Resume = () => (
         <H5>Web</H5>
         <P>
           <a
-            href="http://unii.design"
+            href="https://unii.herokuapp.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            unii.design
+            wjdev (you are here)
           </a>
         </P>
         <Portrait.Split />
