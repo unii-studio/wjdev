@@ -15,7 +15,10 @@ mongoose.connection.on('connected', () => {
 require('../models/email');
 const Email = mongoose.model('emails');
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(sendgridKey);
+sgMail.setApiKey(
+  sendgridKey ||
+    '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',
+);
 
 module.exports = app => {
   app.post(
@@ -60,8 +63,8 @@ module.exports = app => {
       });
 
       const msg = {
-        to: emailAddress,
-        from: req.body.email,
+        to: req.body.email,
+        from: emailAddress || 'liwa.johnson@gmail.com',
         emailAddress: req.body.email,
         subject: req.body.subject,
         text: req.body.message,
@@ -69,7 +72,10 @@ module.exports = app => {
                   <p>${req.body.message}</p>`,
       };
 
-      sgMail.send(msg);
+      sgMail
+        .send(msg)
+        .then(response => console.log('SENDGRID: Email Sent'))
+        .catch(error => console.log('SENDGRID:' + error.message));
     },
   );
 };
