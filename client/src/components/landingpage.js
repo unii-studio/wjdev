@@ -17,7 +17,7 @@ const Landing = () => (
           </Banner.Text>
 
           <Banner.Split />
-          
+
           <Social>
             {/* LinkedIn */}
             <Social.Link
