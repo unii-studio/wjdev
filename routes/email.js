@@ -3,7 +3,15 @@ const { check, validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 const { mongoURI, sendgridKey, emailAddress } = require('../config/config');
 
-mongoose.connect(mongoURI);
+mongoose.connect(mongoURI || 'mongodb://localhost/unii', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+mongoose.connection.on('connected', () => {
+  console.log('Mongoose: Connected');
+});
+
 require('../models/email');
 const Email = mongoose.model('emails');
 const sgMail = require('@sendgrid/mail');
