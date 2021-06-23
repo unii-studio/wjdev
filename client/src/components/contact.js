@@ -17,12 +17,13 @@ const modalStyles = {
     width: '35%',
     minWidth: '250px',
     height: '25%',
-    minHeight: '250px',
+    minHeight: '100px',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    padding: '0',
+    padding: '5px',
     borderRadius: '3px',
     border: 'solid',
+    zIndex: '5'
   },
 };
 
@@ -233,18 +234,19 @@ export default class Contact extends React.Component {
         >
           <div className="modalHeader-container">
             <span className="modalHeader-container__text">
-              Your message was sent!
+              {name || "Buddy"}, your message was sent!
             </span>
             <i
               className="fa fa-times modalHeader-container__close-icon"
               aria-hidden="true"
               onClick={this.closeModal}
+              style={{float: "right", display: "inline-block", padding: "2px 5px", fontSize: "20px"}}
             />
           </div>
 
           <div className="modal-body">
             <p className="modal-body__text">{resData}</p>
-            <p>I&apos;ll be in touch with you soon.</p>
+            <p>I&apos;ll be in touch with you very soon.</p>
           </div>
         </Modal>
       </ContactForm>
