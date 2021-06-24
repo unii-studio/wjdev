@@ -11,7 +11,9 @@ const TitleStyle = {
 
 const Title = ({ children, img }) => (
   <CardTitle shadow={5} style={{ background: img, ...TitleStyle }}>
-    {children}
+    <span style={{  backgroundColor: 'black', fontSize: '1.5em', opacity: '0.8', marginTop: '50%', padding: '7px'}}>
+      {children}
+    </span>
   </CardTitle>
 );
 
