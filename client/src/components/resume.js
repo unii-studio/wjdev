@@ -59,7 +59,7 @@ const Resume = () => (
         <H5>Web</H5>
         <P>
           <a
-            href="https://unii.herokuapp.com/"
+            href="https://portfolio.liwatec.xyz/"
             rel="noopener noreferrer"
             target="_blank"
           >

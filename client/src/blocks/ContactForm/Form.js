@@ -6,12 +6,12 @@ const Form = styled.form`
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   border-radius: 10px;
-  margin-top: 15%;
+  margin-top: 8%;
   padding: 1em;
 
   input,
   textarea {
-    width: 90%;
+    width: 85%;
     display: block;
     border: none;
     border-radius: 5px;
@@ -20,9 +20,9 @@ const Form = styled.form`
     letter-spacing: 0.25px;
     font-size: 1em;
     justify-self: center;
-    -webkit-box-shadow: inset  0px 0px 5px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: inset  0px 0px 5px 0px rgba(0,0,0,0.2);
-    box-shadow: inset  0px 0px 3px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset  0px 0px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset  0px 0px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: inset  0px 0px 3px 0px rgba(0,0,0,0.35);
   }
 
   input {
@@ -36,14 +36,15 @@ const Form = styled.form`
   }
 
   textarea {
-    height: 125px;
+    height: 90%;
     margin-bottom: 30px;
   }
 
   @media only screen and (max-width: 475px) {
     input,
     textarea {
-      width: 90%;
+      width: 70%;
+      height: 50%;
     }
   }
 `;
