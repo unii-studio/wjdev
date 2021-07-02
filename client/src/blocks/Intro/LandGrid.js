@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid } from 'react-mdl';
+import Grid from '@material-ui/core/Grid';
 
 const LandGrid = styled(Grid)`
   background: #780206; /* fallback for old browsers */

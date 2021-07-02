@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { Header } from 'react-mdl';
+import AppBar from '@material-ui/core/AppBar';
 import DomLink from './DomLink';
 
-const AppHeader = styled(Header)`
+const AppHeader = styled(AppBar)`
   background: #780206; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,

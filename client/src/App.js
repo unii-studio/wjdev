@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -26,8 +25,8 @@ export default function App() {
   const classes = useStyles();
   
   return (
-    <Container>
-      <AppBar position="static">
+    <Container className={classes.root}>
+      <AppHeader position="fixed">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
@@ -45,24 +44,11 @@ export default function App() {
             <AppHeader.Link to="/contact">CONTACT</AppHeader.Link>
           </Button>
         </Toolbar>
-        {/* <Drawer
-          title={}
-          style={{
-            backgroundColor: "#780206",
-            border: "none",
-          }}
-        >
-          <Navigation>
-            <AppHeader.Link to="/projects">PROJECTS</AppHeader.Link>
-            <AppHeader.Link to="/resume">RESUME</AppHeader.Link>
-            <AppHeader.Link to="/contact">CONTACT</AppHeader.Link>
-          </Navigation>
-        </Drawer> */}
-      </AppBar>
-      <Container>
+      </AppHeader>
+      <div>
         <Container className="page-content" />
         <Main />
-      </Container>
+      </div>
     </Container>
   );
 }
