@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { Cell } from 'react-mdl';
+import Grid from '@material-ui/core/Grid';
 
 import Split from './Split';
 
-const History = styled(Cell)`
+const History = styled(Grid)`
   background: rgba(1, 1, 1, 0.9);
   color: white;
   padding: 2em;
