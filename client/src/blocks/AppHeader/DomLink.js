@@ -9,7 +9,7 @@ const DomLink = ({ color='white', children, to}) => (
       textDecoration: 'none',
       color: color,
       fontFamily: 'Raleway',
-      padding: '1em',
+      padding: '0.8em',
     }}
     to={to}
   >
