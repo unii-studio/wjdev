@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import Box from '@material-ui/core/Box';
+import Hidden from '@material-ui/core/Hidden';
 import Paper from '@material-ui/core/Paper';
 import MenuIcon from '@material-ui/icons/Menu';
 import Main from './components/main';
@@ -33,10 +33,10 @@ export default function App() {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            <AppHeader.Link to="/">WJ DEV</AppHeader.Link>
-          </Typography>
-          <Box display={{ xs: 'none', sm: 'flex', md: 'flex', xl: 'flex'}} >
+          <Hidden only={['xs']} >
+            <Typography variant="h6" className={classes.title}>
+              <AppHeader.Link to="/">WJ DEV</AppHeader.Link>
+            </Typography>
             <Button color="inherit">
               <AppHeader.Link to="/projects">PROJECTS</AppHeader.Link>
             </Button>
@@ -46,7 +46,7 @@ export default function App() {
             <Button color="inherit">
               <AppHeader.Link to="/contact">CONTACT</AppHeader.Link>
             </Button>
-          </Box>
+          </Hidden>
 
         </Toolbar>
       </AppHeader>
