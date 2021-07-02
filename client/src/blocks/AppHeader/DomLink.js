@@ -10,6 +10,7 @@ const DomLink = ({ color='white', children, to}) => (
       color: color,
       fontFamily: 'Raleway',
       padding: '0.8em',
+      alignText: 'center',
     }}
     to={to}
   >

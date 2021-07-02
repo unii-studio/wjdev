@@ -10,6 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import MenuIcon from '@material-ui/icons/Menu';
 import Main from './components/main';
 import AppHeader from './blocks/AppHeader';
+import TemporaryDrawer from './elements/TemporaryDrawer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,9 +31,7 @@ export default function App() {
     <Container className={classes.root}>
       <AppHeader position="fixed">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+          <TemporaryDrawer/>
           <Hidden only={['xs']} >
             <Typography variant="h6" className={classes.title}>
               <AppHeader.Link to="/">WJ DEV</AppHeader.Link>
@@ -47,7 +46,6 @@ export default function App() {
               <AppHeader.Link to="/contact">CONTACT</AppHeader.Link>
             </Button>
           </Hidden>
-
         </Toolbar>
       </AppHeader>
       <Toolbar/>
