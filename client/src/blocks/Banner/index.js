@@ -5,14 +5,18 @@ import Text from './Text';
 import Split from './Split';
 
 const Banner = styled.div`
+  display: flex;
+  flex-flow: column wrap;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0.6;
   width: 50%;
   margin: auto;
+  justify-content: center;
   border-radius: 10px;
   padding: 2em;
+
   @media (max-width: 720px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 

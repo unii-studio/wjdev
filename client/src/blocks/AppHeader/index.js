@@ -4,6 +4,7 @@ import DomLink from './DomLink';
 
 const AppHeader = styled(AppBar)`
   background: #780206; /* fallback for old browsers */
+  box-shadow: none;
   background: -webkit-linear-gradient(
     to right,
     #780206,
